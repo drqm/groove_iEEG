@@ -16,7 +16,7 @@ There are two blocks in the experiment. In one of them, on each trial participan
 
 The experiment is implemented in psychopy and can be run with the script:
 
-- scripts/groove_harmony_iEEG.py
+- [scripts/groove_harmony_iEEG.py](https://github.com/drqm/groove_iEEG/tree/master/scripts)
 
 The stimuli are found under the "stimuli" directory. A list and metadata for the stimuli used in this experiment are found in "stimuli/stim_list.csv". This list is loaded and randomized in the psychopy script. Names and data for other stimuli not included in this experiment are also found in "stimuli/Stim_Names.xlsx". 
 
