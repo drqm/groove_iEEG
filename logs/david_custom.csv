@@ -1,0 +1,77 @@
+subject,trialCode,code,number,name,rhythm,harmony,condition,block,startTime,response,rt,trigger
+david,0,0,21,LR7 LH4,low,low,wanting_to_move,practice,23.33707012,3,10.70792874,201
+david,0,0,51,Mariato Clave MR5 MH4,medium,medium,wanting_to_move,practice,35.06619837,4,11.80666709,203
+david,33,33,67,HR3 MH1,high,medium,wanting_to_move,main,52.27332428,2,11.39216472,67
+david,34,34,68,HR3 MH2,high,medium,wanting_to_move,main,64.6860868,1,11.25726181,68
+david,6,6,8,LR3 HH5,low,high,wanting_to_move,main,76.96567787,2,11.23793308,8
+david,16,16,32,Son Clave MR1 MH2,medium,medium,wanting_to_move,main,89.22580747,4,10.0901266,32
+david,7,7,10,LR6 LH2,low,low,wanting_to_move,main,100.3371146,4,10.14024062,10
+david,22,22,41,Rumba Clave MR2 MH2,medium,medium,wanting_to_move,main,111.4985989,5,10.34131188,41
+david,4,4,5,LR3 MH2,low,medium,wanting_to_move,main,122.8602624,4,10.95654235,5
+david,25,25,55,HR1 LH2,high,low,wanting_to_move,main,134.8373883,2,10.70818256,55
+david,11,11,16,LR6 HH3,low,high,wanting_to_move,main,146.5824396,1,11.39003649,16
+david,26,26,56,HR1 LH3,high,low,wanting_to_move,main,158.9929958,3,10.40780589,56
+david,19,19,37,Rumba Clave MR2 LH2,medium,low,wanting_to_move,main,170.4217642,5,10.69034497,37
+david,24,24,44,Rumba Clave MR2 HH5,medium,high,wanting_to_move,main,182.1332361,3,12.3892736,44
+david,28,28,59,HR1 MH2,high,medium,wanting_to_move,main,195.5432537,2,11.19191178,59
+david,14,14,29,Son Clave MR1 LH3,medium,low,wanting_to_move,main,207.7541773,5,11.25727057,29
+david,17,17,34,Son Clave MR1 HH3,medium,high,wanting_to_move,main,220.0320902,3,11.11011795,34
+david,35,35,70,HR3 HH3,high,high,wanting_to_move,main,232.1712189,1,10.62970906,70
+david,31,31,64,HR3 LH2,high,low,wanting_to_move,main,243.8212957,2,10.97410096,64
+david,29,29,61,HR1 HH3,high,high,wanting_to_move,main,255.8168273,1,10.62588985,61
+david,9,9,13,LR6 MH1,low,medium,wanting_to_move,main,293.7104367,2,11.64550047,13
+david,8,8,11,LR6 LH3,low,low,wanting_to_move,main,306.3766312,3,10.27425482,11
+david,27,27,58,HR1 MH1,high,medium,wanting_to_move,main,317.6710729,2,10.37495474,58
+david,13,13,28,Son Clave MR1 LH2,medium,low,wanting_to_move,main,329.0668602,5,10.25668563,28
+david,5,5,7,LR3 HH3,low,high,wanting_to_move,main,340.3446951,2,10.65672181,7
+david,21,21,40,Rumba Clave MR2 MH1,medium,medium,wanting_to_move,main,352.02179,2,11.44144692,40
+david,3,3,4,LR3 MH1,low,medium,wanting_to_move,main,364.4836859,4,12.20693957,4
+david,10,10,14,LR6 MH2,low,medium,wanting_to_move,main,377.7132071,2,10.62247979,14
+david,12,12,17,LR6 HH5,low,high,wanting_to_move,main,389.3557796,3,11.45734955,17
+david,30,30,62,HR1 HH5,high,high,wanting_to_move,main,401.8330049,2,10.59127915,62
+david,23,23,43,Rumba Clave MR2 HH3,medium,high,wanting_to_move,main,413.4437897,3,10.20854413,43
+david,32,32,65,HR3 LH3,high,low,wanting_to_move,main,424.6732387,1,10.25740221,65
+david,15,15,31,Son Clave MR1 MH1,medium,medium,wanting_to_move,main,435.9512605,5,11.59313424,31
+david,1,1,1,LR3 LH2,low,low,wanting_to_move,main,448.5807621,3,10.40555294,1
+david,18,18,35,Son Clave MR1 HH5,medium,high,wanting_to_move,main,460.007415,2,10.90717117,35
+david,20,20,38,Rumba Clave MR2 LH3,medium,low,wanting_to_move,main,471.934416,5,10.3250876,38
+david,36,36,71,HR3 HH5,high,high,wanting_to_move,main,483.2796335,1,10.47375215,71
+david,2,2,2,LR3 LH3,low,low,wanting_to_move,main,494.7742252,3,10.57473177,2
+david,0,0,81,HR7 HH6,high,high,pleasure,practice,559.5347423,1,10.40155795,202
+david,0,0,24,LR7 MH4,low,medium,pleasure,practice,570.9573506,4,12.0893659,204
+david,44,8,11,LR6 LH3,low,low,pleasure,main,588.641549,3,12.98031389,111
+david,37,1,1,LR3 LH2,low,low,pleasure,main,602.6418564,4,10.52516623,101
+david,72,36,71,HR3 HH5,high,high,pleasure,main,614.1871493,2,10.77464812,171
+david,46,10,14,LR6 MH2,low,medium,pleasure,main,625.999716,4,10.10643585,114
+david,67,31,64,HR3 LH2,high,low,pleasure,main,637.1273452,2,11.24031184,164
+david,68,32,65,HR3 LH3,high,low,pleasure,main,649.3875495,3,11.92417621,165
+david,39,3,4,LR3 MH1,low,medium,pleasure,main,662.3313451,5,12.32397754,104
+david,38,2,2,LR3 LH3,low,low,pleasure,main,675.6767556,3,10.60668729,102
+david,55,19,37,Rumba Clave MR2 LH2,medium,low,pleasure,main,687.3048265,5,10.60665082,137
+david,59,23,43,Rumba Clave MR2 HH3,medium,high,pleasure,main,698.9325029,3,10.17633006,143
+david,49,13,28,Son Clave MR1 LH2,medium,low,pleasure,main,710.1427322,4,10.90840668,128
+david,43,7,10,LR6 LH2,low,low,pleasure,main,722.0712735,4,12.29055312,110
+david,71,35,70,HR3 HH3,high,high,pleasure,main,735.3829342,2,11.02334195,170
+david,57,21,40,Rumba Clave MR2 MH1,medium,medium,pleasure,main,747.4267464,4,13.39121694,140
+david,60,24,44,Rumba Clave MR2 HH5,medium,high,pleasure,main,761.8534437,2,10.50796499,144
+david,69,33,67,HR3 MH1,high,medium,pleasure,main,773.381946,1,13.03906152,167
+david,58,22,41,Rumba Clave MR2 MH2,medium,medium,pleasure,main,787.4425454,2,12.42296423,141
+david,56,20,38,Rumba Clave MR2 LH3,medium,low,pleasure,main,800.9028113,3,10.95668202,138
+david,61,25,55,HR1 LH2,high,low,pleasure,main,826.2854919,3,12.44484384,155
+david,41,5,7,LR3 HH3,low,high,pleasure,main,839.7521199,2,12.18982622,107
+david,51,15,31,Son Clave MR1 MH1,medium,medium,pleasure,main,852.9628633,4,15.43835012,131
+david,66,30,62,HR1 HH5,high,high,pleasure,main,869.4216019,2,13.60562609,162
+david,70,34,68,HR3 MH2,high,medium,pleasure,main,884.0481591,1,11.49080606,168
+david,53,17,34,Son Clave MR1 HH3,medium,high,pleasure,main,896.5592085,5,11.89021281,134
+david,42,6,8,LR3 HH5,low,high,pleasure,main,909.4704181,2,11.25730995,108
+david,63,27,58,HR1 MH1,high,medium,pleasure,main,921.7485005,5,12.85654808,158
+david,50,14,29,Son Clave MR1 LH3,medium,low,pleasure,main,935.6263969,5,14.4702637,129
+david,48,12,17,LR6 HH5,low,high,pleasure,main,951.1179767,3,12.37330386,117
+david,64,28,59,HR1 MH2,high,medium,pleasure,main,964.512184,2,11.43999333,159
+david,40,4,5,LR3 MH2,low,medium,pleasure,main,976.9724105,5,11.64044793,105
+david,52,16,32,Son Clave MR1 MH2,medium,medium,pleasure,main,989.6331349,4,10.95784861,132
+david,45,9,13,LR6 MH1,low,medium,pleasure,main,1001.611993,2,11.49017518,113
+david,62,26,56,HR1 LH3,high,low,pleasure,main,1014.121692,2,10.92522501,156
+david,65,29,61,HR1 HH3,high,high,pleasure,main,1026.067625,1,10.52372249,161
+david,47,11,16,LR6 HH3,low,high,pleasure,main,1037.611891,5,11.3080027,116
+david,54,18,35,Son Clave MR1 HH5,medium,high,pleasure,main,1049.940473,1,12.22245784,135
