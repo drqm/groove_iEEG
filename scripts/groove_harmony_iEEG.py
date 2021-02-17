@@ -169,7 +169,7 @@ end_txt = visual.TextStim(win,
                         'Thanks for participating!',
                 color=txt_color, wrapWidth=1.8)
 
-trialtxt = visual.TextStim(win, text='',color=txt_color, height=0.2)
+trialtxt = visual.TextStim(win, text='',color=txt_color, height=0.1)
 
 #set clocks
 RT = core.Clock()
@@ -218,6 +218,7 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
         core.wait(1)
         fixation.draw()
         win.flip()
+        core.wait(1)
         nextFlip = win.getFutureFlipTime(clock='ptb')
         startTime = win.getFutureFlipTime(clock=exp_time)
         trigger = int(s_dict['trigger'][midx])
