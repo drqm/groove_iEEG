@@ -1,3 +1,41 @@
+# -*- coding: utf-8 -*-
+
+"""
+Groove Harmony iEEG study
+
+Script to present stimuli and record participants' ratings (David Quiroga-Martinez)
+Currently optimized for iEEG, but could be run for MEG or EEG as well.
+
+Experiment where participants (musicians and non-musicans) listen to a musical 
+pattern then rate, in one block, how much they wanted to move or, in another 
+block, how much they liked it using key presses (1-5). 
+
+RUNS FROM PSYCHOPY STANDALONE APP. NOT TESTED OUTSIDE STANDALONE APP.
+**********************
+Stimuli (built by Tomas Matthews)
+***********************
+Stimuli consist of musical patterns lasting 10 seconds that vary rhythm 
+and harmonic complexity
+    3 levels: low, medium or high for both rhythm and harmonic complexity
+    9 conditions: LL,LM,LH,ML,MM,MH,HL,HM,HH
+    12 unique stims for each level of complexity (i.e. 12 medium rhythms, 12 high 
+    chords etc) so:
+        12 unique stims in each condition
+        36 total
+
+**************************
+Experimental design
+*************************
+-factorial design: 3(rhythmic complexity) X 3(harmonic complexity)
+-2 counterbalanced blocks per person
+-one presention of each stim per block (36 total)
+-trials randomized for each subject
+-one break in the 18th trial of each block.
+"""
+
+"""
+'IMPORT'
+"""
 from psychopy import prefs
 prefs.hardware['audioLib'] = ['PTB']
 from psychopy import visual, core, sound, event, gui, logging#, parallel
@@ -17,7 +55,8 @@ frate = 60 #48 #60 #120 #
 prd = 1000/frate # inter frame interval in ms
 
 # Load stimulus list and store in a dictionary
-stim_file = open('stimuli/stim_list.csv',newline = '')
+# change the stim file below to use different stimuli 
+stim_file = open('stimuli/stim_list.csv',newline = '') 
 stim_obj = csv.DictReader(stim_file,delimiter = ',')
 blocks = {}
 for row in stim_obj:
@@ -39,7 +78,7 @@ for b in blocks:
         blocks[b][c]['order'] = np.arange(len(blocks[b][c]['code']))
         rnd.shuffle(blocks[b][c]['order'])
 
-#### function and key to quit the experiment and save log file
+#function and key to quit the experiment and save log file
 def quit_and_save():
     win.close()
     if logfile:
@@ -149,7 +188,29 @@ logfile.write("subject,trialCode,code,number,name,rhythm,harmony,"
 
 # make function to loop over trials and present the stimuli
 def block_run(s_dict, s_order, b_sounds, breaks=[]):
-    for mtrial, midx in enumerate(s_order):
+    """
+    s_dict: dictionary containing the stimulus list and metadata, as loaded 
+            from a csv file. Must contain the lists:
+
+                'trial_code': code of the trial before randomization
+                'code': experiment specific stimulus code
+                'name': stimulus name
+                'number': stimulus number corresponding to wav file
+                'rhythm': rhythm complexity (low,medium,high)
+                'harmony': harmony complexity (low, medium, high)
+                'condition': 'pleasure' or 'wanting to move'
+                'block': 'practice' or 'main'
+
+            each list contains the above information for each trial in the
+            experiment.
+
+    s_order: randomized stimulus order. Must match the length of s_dict lists.
+    b_sounds: dictionary with the loaded sounds. Keys must match elements in the
+            "number" list in s_dict.
+    breaks: list with numbers indicating the indices of trials where a pause is
+            wanted.
+    """
+    for mtrial, midx in enumerate(s_order): # loop over trials
         m = s_dict['number'][midx]
         trialtxt.setText('trial {} / {}'.format(mtrial + 1, len(s_order)))
         trialtxt.draw()
@@ -164,7 +225,8 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
         win.callOnFlip(print, trigger)
         b_sounds[m].play(when = nextFlip)
         RT.reset()
-        for frs in range(int(np.round(10000/prd))): # 10 seconds
+        # we synchronize stimulus delivery with screen frames for time acc.
+        for frs in range(int(np.round(10000/prd))): # wait 10 seconds
             fixation.draw()
             win.flip()
         event.clearEvents(eventType='keyboard')
