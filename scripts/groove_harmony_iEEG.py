@@ -278,7 +278,7 @@ for bidx,b in enumerate(bnames):
         event.waitKeys()
 
     #run main task
-    block_run(blocks[b]['main'],blocks[b]['main']['order'], sounds, breaks = [17])
+    block_run(blocks[b]['main'],blocks[b]['main']['order'], sounds, breaks = [23])
     
     if  (bidx + 1) < len(bnames):
         block_end_txt.draw()

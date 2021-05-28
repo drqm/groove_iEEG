@@ -1,0 +1,77 @@
+trial_code,code,number,name,rhythm,harmony,condition,block,trigger
+0,0,21,LR7 LH4,low,low,wanting_to_move,practice,201
+0,0,81,HR7 HH6,high,high,pleasure,practice,202
+0,0,51,Mariato Clave MR5 MH4,medium,medium,wanting_to_move,practice,203
+0,0,24,LR7 MH4,low,medium,pleasure,practice,204
+1,1,1,LR3 LH2,low,low,wanting_to_move,main,1
+2,2,2,LR3 LH3,low,low,wanting_to_move,main,2
+3,3,4,LR3 MH1,low,medium,wanting_to_move,main,4
+4,4,5,LR3 MH2,low,medium,wanting_to_move,main,5
+5,5,7,LR3 HH3,low,high,wanting_to_move,main,7
+6,6,8,LR3 HH5,low,high,wanting_to_move,main,8
+7,7,10,LR6 LH2,low,low,wanting_to_move,main,10
+8,8,11,LR6 LH3,low,low,wanting_to_move,main,11
+9,9,13,LR6 MH1,low,medium,wanting_to_move,main,13
+10,10,14,LR6 MH2,low,medium,wanting_to_move,main,14
+11,11,16,LR6 HH3,low,high,wanting_to_move,main,16
+12,12,17,LR6 HH5,low,high,wanting_to_move,main,17
+13,13,28,Son Clave MR1 LH2,medium,low,wanting_to_move,main,28
+14,14,29,Son Clave MR1 LH3,medium,low,wanting_to_move,main,29
+15,15,31,Son Clave MR1 MH1,medium,medium,wanting_to_move,main,31
+16,16,32,Son Clave MR1 MH2,medium,medium,wanting_to_move,main,32
+17,17,34,Son Clave MR1 HH3,medium,high,wanting_to_move,main,34
+18,18,35,Son Clave MR1 HH5,medium,high,wanting_to_move,main,35
+19,19,37,Rumba Clave MR2 LH2,medium,low,wanting_to_move,main,37
+20,20,38,Rumba Clave MR2 LH3,medium,low,wanting_to_move,main,38
+21,21,40,Rumba Clave MR2 MH1,medium,medium,wanting_to_move,main,40
+22,22,41,Rumba Clave MR2 MH2,medium,medium,wanting_to_move,main,41
+23,23,43,Rumba Clave MR2 HH3,medium,high,wanting_to_move,main,43
+24,24,44,Rumba Clave MR2 HH5,medium,high,wanting_to_move,main,44
+25,25,55,HR1 LH2,high,low,wanting_to_move,main,55
+26,26,56,HR1 LH3,high,low,wanting_to_move,main,56
+27,27,58,HR1 MH1,high,medium,wanting_to_move,main,58
+28,28,59,HR1 MH2,high,medium,wanting_to_move,main,59
+29,29,61,HR1 HH3,high,high,wanting_to_move,main,61
+30,30,62,HR1 HH5,high,high,wanting_to_move,main,62
+31,31,64,HR3 LH2,high,low,wanting_to_move,main,64
+32,32,65,HR3 LH3,high,low,wanting_to_move,main,65
+33,33,67,HR3 MH1,high,medium,wanting_to_move,main,67
+34,34,68,HR3 MH2,high,medium,wanting_to_move,main,68
+35,35,70,HR3 HH3,high,high,wanting_to_move,main,70
+36,36,71,HR3 HH5,high,high,wanting_to_move,main,71
+37,1,1,LR3 LH2,low,low,pleasure,main,101
+38,2,2,LR3 LH3,low,low,pleasure,main,102
+39,3,4,LR3 MH1,low,medium,pleasure,main,104
+40,4,5,LR3 MH2,low,medium,pleasure,main,105
+41,5,7,LR3 HH3,low,high,pleasure,main,107
+42,6,8,LR3 HH5,low,high,pleasure,main,108
+43,7,10,LR6 LH2,low,low,pleasure,main,110
+44,8,11,LR6 LH3,low,low,pleasure,main,111
+45,9,13,LR6 MH1,low,medium,pleasure,main,113
+46,10,14,LR6 MH2,low,medium,pleasure,main,114
+47,11,16,LR6 HH3,low,high,pleasure,main,116
+48,12,17,LR6 HH5,low,high,pleasure,main,117
+49,13,28,Son Clave MR1 LH2,medium,low,pleasure,main,128
+50,14,29,Son Clave MR1 LH3,medium,low,pleasure,main,129
+51,15,31,Son Clave MR1 MH1,medium,medium,pleasure,main,131
+52,16,32,Son Clave MR1 MH2,medium,medium,pleasure,main,132
+53,17,34,Son Clave MR1 HH3,medium,high,pleasure,main,134
+54,18,35,Son Clave MR1 HH5,medium,high,pleasure,main,135
+55,19,37,Rumba Clave MR2 LH2,medium,low,pleasure,main,137
+56,20,38,Rumba Clave MR2 LH3,medium,low,pleasure,main,138
+57,21,40,Rumba Clave MR2 MH1,medium,medium,pleasure,main,140
+58,22,41,Rumba Clave MR2 MH2,medium,medium,pleasure,main,141
+59,23,43,Rumba Clave MR2 HH3,medium,high,pleasure,main,143
+60,24,44,Rumba Clave MR2 HH5,medium,high,pleasure,main,144
+61,25,55,HR1 LH2,high,low,pleasure,main,155
+62,26,56,HR1 LH3,high,low,pleasure,main,156
+63,27,58,HR1 MH1,high,medium,pleasure,main,158
+64,28,59,HR1 MH2,high,medium,pleasure,main,159
+65,29,61,HR1 HH3,high,high,pleasure,main,161
+66,30,62,HR1 HH5,high,high,pleasure,main,162
+67,31,64,HR3 LH2,high,low,pleasure,main,164
+68,32,65,HR3 LH3,high,low,pleasure,main,165
+69,33,67,HR3 MH1,high,medium,pleasure,main,167
+70,34,68,HR3 MH2,high,medium,pleasure,main,168
+71,35,70,HR3 HH3,high,high,pleasure,main,170
+72,36,71,HR3 HH5,high,high,pleasure,main,171
