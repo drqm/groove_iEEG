@@ -16,21 +16,22 @@ Stimuli (built by Tomas Matthews)
 ***********************
 Stimuli consist of musical patterns lasting 10 seconds that vary rhythm 
 and harmonic complexity
-    3 levels: low, medium or high for both rhythm and harmonic complexity
-    9 conditions: LL,LM,LH,ML,MM,MH,HL,HM,HH
-    12 unique stims for each level of complexity (i.e. 12 medium rhythms, 12 high 
+    2 levels: medium or high for both rhythm and harmonic complexity
+    4 conditions: MM,MH,HM,HH
+    24 unique stims for each level of complexity (i.e. 24 medium rhythms, 24 high
     chords etc) so:
-        12 unique stims in each condition
-        36 total
+        24 unique stims in each block.
+        48 total
+    24 stims per design cell (e.g. medium harmony, high rhythm) and 12 per block.
 
 **************************
 Experimental design
 *************************
--factorial design: 3(rhythmic complexity) X 3(harmonic complexity)
+-factorial design: 2(rhythmic complexity) X 2(harmonic complexity)
 -2 counterbalanced blocks per person
--one presention of each stim per block (36 total)
+-two presentions of each stim per block
 -trials randomized for each subject
--one break in the 18th trial of each block.
+-one break in the 24th trial of each block.
 """
 
 """
