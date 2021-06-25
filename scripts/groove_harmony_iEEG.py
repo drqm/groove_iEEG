@@ -121,7 +121,7 @@ blocks['wanting_to_move']['instr'] =  visual.TextStim(win,
                 ' TO MOVE, as follows:\n\n '
                 'not at all  < 1    2    3    4    5 >  very much\n\n'
                 'To answer, please type 1, 2, 3, 4 or 5 on your keyboard.\n\n'
-                'press a key to continue.',
+                'Press spacebar to continue.',
                 color=txt_color, wrapWidth=1.8)
 
 blocks['pleasure']['instr'] =  visual.TextStim(win, 
@@ -130,7 +130,7 @@ blocks['pleasure']['instr'] =  visual.TextStim(win,
                 'HOW MUCH YOU LIKED the musical pattern, as follows:\n\n'
                 'not at all  < 1    2    3    4    5 >  very much\n\n'
                 'To answer, please type 1, 2, 3, 4 or 5 on your keyboard.\n\n'
-                'press a key to continue.',
+                'Press spacebar to continue.',
                 color=txt_color, wrapWidth=1.8)
 
 blocks['pleasure']['ratingtxt'] = pleasure_txt = visual.TextStim(win, 
@@ -145,23 +145,23 @@ blocks['wanting_to_move']['ratingtxt'] = visual.TextStim(win,
 
 practice = visual.TextStim(win, 
                 text = 'First, let us do some practice trials.\n\n'
-                    'When ready, press a key to hear the first musical pattern.',
+                    'When ready, press spacebar to hear the first musical pattern.',
                 color=txt_color, wrapWidth=1.8)
 
 main_task = visual.TextStim(win,
                 text = 'This is the end of the practice trials.\n\n'
-                    'When ready, press a key to start the main task.',
+                    'When ready, press spacebar to start the main task.',
                 color=txt_color, wrapWidth=1.8)
 
 break_txt = visual.TextStim(win,
                 text = 'Now it is time for a little break.\n'
                         'Take as much time as you need.\n\n'
-                        'Press a key when ready to continue.',
+                        'Press spacebar when ready to continue.',
                 color=txt_color, wrapWidth=1.8)
 
 block_end_txt = visual.TextStim(win, 
                 text = 'This is the end of the first block.\n\n'
-                        'Now take a little break and press a key when '
+                        'Now take a little break and press spacebar when '
                         'ready to continue with the next task',
                 color=txt_color, wrapWidth=1.8)
 
@@ -215,6 +215,7 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
         m = s_dict['number'][midx]
         trialtxt.setText('trial {} / {}'.format(mtrial + 1, len(s_order)))
         trialtxt.draw()
+        #fixation.draw()
         win.flip()
         core.wait(1)
         fixation.draw()
@@ -256,7 +257,6 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
             event.waitKeys()
 
 # Now run the experiment.
-
 bnames = ['pleasure','wanting_to_move']
 bnames = [bnames[b] for b in block_order] # counterbalance blocks
 for bidx,b in enumerate(bnames):
