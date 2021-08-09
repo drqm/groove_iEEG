@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 """
-Groove Harmony iEEG study
+Groove Harmony MEG study
 
 Script to present stimuli and record participants' ratings (David Quiroga-Martinez)
-Currently optimized for iEEG, but could be run for MEG or EEG as well.
+Currently optimized for MEG, but could be run for (i)EEG as well.
 
 Experiment where participants (musicians and non-musicans) listen to a musical 
 pattern then rate, in one block, how much they wanted to move or, in another 
@@ -12,12 +12,12 @@ block, how much they liked it using key presses (1-5).
 
 RUNS FROM PSYCHOPY STANDALONE APP. NOT TESTED OUTSIDE STANDALONE APP.
 **********************
-Stimuli (built by Tomas Matthews)
+Stimuli (built by Tomas Matthews and Alexandre Selma Miralles)
 ***********************
 Stimuli consist of musical patterns lasting 10 seconds that vary rhythm 
 and harmonic complexity
-    2 levels: medium or high for both rhythm and harmonic complexity
-    4 conditions: MM,MH,HM,HH
+    3 levels: Low, medium or high for both rhythm and harmonic complexity
+    9 conditions: LL,LM,LH,ML,MM,MH,HL,HM,HH
     24 unique stims for each level of complexity (i.e. 24 medium rhythms, 24 high
     chords etc) so:
         24 unique stims in each block.
@@ -27,7 +27,7 @@ and harmonic complexity
 **************************
 Experimental design
 *************************
--factorial design: 2(rhythmic complexity) X 2(harmonic complexity)
+-factorial design: 3(rhythmic complexity) X 3(harmonic complexity)
 -2 counterbalanced blocks per person
 -two presentions of each stim per block
 -trials randomized for each subject
@@ -57,7 +57,7 @@ prd = 1000/frate # inter frame interval in ms
 
 # Load stimulus list and store in a dictionary
 # change the stim file below to use different stimuli 
-stim_file = open('stimuli/stim_list.csv',newline = '') 
+stim_file = open('stimuli/stim_list_MEG2021.csv',newline = '') 
 stim_obj = csv.DictReader(stim_file,delimiter = ',')
 blocks = {}
 for row in stim_obj:
@@ -120,7 +120,8 @@ blocks['wanting_to_move']['instr'] =  visual.TextStim(win,
                 'the degree to which the musical pattern MADE YOU WANT '
                 ' TO MOVE, as follows:\n\n '
                 'not at all  < 1    2    3    4    5 >  very much\n\n'
-                'To answer, please type 1, 2, 3, 4 or 5 on your keyboard.\n\n'
+                'To answer, please use buttons 1 and 2 to select the '
+                'desired rating and "spacebar" to confirm your choice.\n\n'
                 'Press spacebar to continue.',
                 color=txt_color, wrapWidth=1.8)
 
@@ -129,18 +130,21 @@ blocks['pleasure']['instr'] =  visual.TextStim(win,
                 'After each pattern, you will be asked to rate '
                 'HOW MUCH YOU LIKED the musical pattern, as follows:\n\n'
                 'not at all  < 1    2    3    4    5 >  very much\n\n'
-                'To answer, please type 1, 2, 3, 4 or 5 on your keyboard.\n\n'
+                'To answer, please use buttons 1 and 2 to select the '
+                'desired rating and "spacebar" to confirm your choice.\n\n'
                 'Press spacebar to continue.',
                 color=txt_color, wrapWidth=1.8)
 
 blocks['pleasure']['ratingtxt'] = pleasure_txt = visual.TextStim(win, 
                 text = 'How much did you like it?\n\n'
-                       'not at all  < 1    2    3    4    5 >  very much',
+                       'Please select the desired rating and press space '
+                       'to confirm your answer\n\n\n\n\n\n\n\n',
                 color=txt_color, wrapWidth=1.8)
 
 blocks['wanting_to_move']['ratingtxt'] = visual.TextStim(win, 
                 text = 'How much did you want to move?\n\n'
-                    'not at all  < 1    2    3    4    5 >  very much',
+                       'Please select the desired rating and press space '
+                       'to confirm your answer\n\n\n\n\n\n\n\n',
                 color=txt_color, wrapWidth=1.8)
 
 practice = visual.TextStim(win, 
@@ -156,12 +160,12 @@ main_task = visual.TextStim(win,
 break_txt = visual.TextStim(win,
                 text = 'Now it is time for a little break.\n'
                         'Take as much time as you need.\n\n'
-                        'Press spacebar when ready to continue.',
+                        'We will continue in a moment.',
                 color=txt_color, wrapWidth=1.8)
 
 block_end_txt = visual.TextStim(win, 
                 text = 'This is the end of the first block.\n\n'
-                        'Now take a little break and press space when ready to continue',
+                        'Now take a little break. We will continue in a moment.',
                 color=txt_color, wrapWidth=1.8)
 
 end_txt = visual.TextStim(win, 
@@ -211,6 +215,14 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
             wanted.
     """
     for mtrial, midx in enumerate(s_order): # loop over trials
+        ratingScale = [];
+        ratingScale = visual.RatingScale(win, choices = [1,2,3,4,5], low=1, high  = 5,
+                                markerStart  = 2,
+                                leftKeys = '1', rightKeys = '2',acceptKeys = 'space',
+                                maxTime = 7, textColor = txt_color, pos = (0.0,-0.2),
+                                scale = 'not at all                        '
+                                '                   very much',markerColor = 'blue',
+                                size = 1.5,showAccept = False,noMouse = True)
         m = s_dict['number'][midx]
         trialtxt.setText('trial {} / {}'.format(mtrial + 1, len(s_order)))
         trialtxt.draw()
@@ -231,20 +243,26 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
         for frs in range(int(np.round(10000/prd))): # wait 10 seconds
             fixation.draw()
             win.flip()
-        event.clearEvents(eventType=None)#'keyboard')
-        resp = None
-        while resp == None:
+        event.clearEvents(eventType='keyboard')
+#        resp = None
+#        while resp == None:
+#            blocks[s_dict['condition'][midx]]['ratingtxt'].draw()
+#            win.flip()
+#            key = event.getKeys(timeStamped = RT, keyList = resp_keys)
+#            #search for key presses. If none, set limit of 17 (10+7) seconds.
+#            if len(key) > 0:
+#                resp = key[0][0]
+#                rt = key[0][1]
+#            elif RT.getTime() > 17: #17 after trial onset
+#                resp = 0
+#                rt = RT.getTime()
+        while ratingScale.noResponse:            
             blocks[s_dict['condition'][midx]]['ratingtxt'].draw()
+            ratingScale.draw()
             win.flip()
-            key = event.getKeys(timeStamped = RT, keyList = resp_keys)
-            #search for key presses. If none, set limit of 17 (10+7) seconds.
-            if len(key) > 0:
-                resp = key[0][0]
-                rt = key[0][1]
-            elif RT.getTime() > 17: #17 after trial onset
-                resp = 0
-                rt = RT.getTime()
-                
+        resp = ratingScale.getRating()
+        rt = ratingScale.getRT
+
         lrow = '{},{},{},{},{},{},{},{},{},{},{},{},{}\n'
         lrow = lrow.format(sub_id[0],s_dict['trial_code'][midx],s_dict['code'][midx],
                             m,s_dict['name'][midx],s_dict['rhythm'][midx],
@@ -254,7 +272,7 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
         if mtrial in breaks:
             break_txt.draw()
             win.flip()
-            event.waitKeys()
+            event.waitKeys(keyList = ['space'])
 
 # Now run the experiment.
 bnames = ['pleasure','wanting_to_move']
@@ -279,12 +297,12 @@ for bidx,b in enumerate(bnames):
         event.waitKeys()
 
     #run main task
-    block_run(blocks[b]['main'],blocks[b]['main']['order'], sounds, breaks = [23])
+    block_run(blocks[b]['main'],blocks[b]['main']['order'], sounds, breaks = [27,55,83])
     
     if  (bidx + 1) < len(bnames):
         block_end_txt.draw()
         win.flip()
-        event.waitKeys()
+        event.waitKeys(keyList = ['space'])
 
 end_txt.draw()
 win.flip()

@@ -1,0 +1,229 @@
+trial_code,code,number,name,rhythm,harmony,condition,block,trigger
+0,0,21,LR7 LH4,low,low,wanting_to_move,practice,90
+0,0,81,HR7 HH6,high,high,pleasure,practice,91
+0,0,49,Mariato Clave MR5 MH1,medium,medium,wanting_to_move,practice,92
+0,0,24,LR7 MH4,low,medium,pleasure,practice,93
+1,1,91,IR LH2,iso,low,wanting_to_move,main,40
+2,2,92,IR LH3,iso,low,wanting_to_move,main,40
+3,3,97,IR HH3,iso,high,wanting_to_move,main,41
+4,4,98,IR HH5,iso,high,wanting_to_move,main,41
+5,5,1,LR3 LH2,low,low,wanting_to_move,main,1
+6,6,2,LR3 LH3,low,low,wanting_to_move,main,1
+7,7,11,LR6 LH2,low,low,wanting_to_move,main,2
+8,8,12,LR6 LH3,low,low,wanting_to_move,main,2
+9,9,19,LR7 LH2,low,low,wanting_to_move,main,3
+10,10,20,LR7 LH3,low,low,wanting_to_move,main,3
+11,11,1,LR3 LH2,low,low,wanting_to_move,main,1
+12,12,2,LR3 LH3,low,low,wanting_to_move,main,1
+13,13,11,LR6 LH2,low,low,wanting_to_move,main,2
+14,14,12,LR6 LH3,low,low,wanting_to_move,main,2
+15,15,19,LR7 LH2,low,low,wanting_to_move,main,3
+16,16,20,LR7 LH3,low,low,wanting_to_move,main,3
+17,17,5,LR3 MH2,low,medium,wanting_to_move,main,11
+18,18,6,LR3 MH4,low,medium,wanting_to_move,main,11
+19,19,14,LR6 MH2,low,medium,wanting_to_move,main,12
+20,20,15,LR6 MH4,low,medium,wanting_to_move,main,12
+21,21,23,LR7 MH2,low,medium,wanting_to_move,main,13
+22,22,24,LR7 MH4,low,medium,wanting_to_move,main,13
+23,23,5,LR3 MH2,low,medium,wanting_to_move,main,11
+24,24,6,LR3 MH4,low,medium,wanting_to_move,main,11
+25,25,14,LR6 MH2,low,medium,wanting_to_move,main,12
+26,26,15,LR6 MH4,low,medium,wanting_to_move,main,12
+27,27,23,LR7 MH2,low,medium,wanting_to_move,main,13
+28,28,24,LR7 MH4,low,medium,wanting_to_move,main,13
+29,29,7,LR3 HH3,low,high,wanting_to_move,main,21
+30,30,8,LR3 HH5,low,high,wanting_to_move,main,21
+31,31,16,LR6 HH3,low,high,wanting_to_move,main,22
+32,32,17,LR6 HH5,low,high,wanting_to_move,main,22
+33,33,25,LR7 HH3,low,high,wanting_to_move,main,23
+34,34,26,LR7 HH5,low,high,wanting_to_move,main,23
+35,35,7,LR3 HH3,low,high,wanting_to_move,main,21
+36,36,8,LR3 HH5,low,high,wanting_to_move,main,21
+37,37,16,LR6 HH3,low,high,wanting_to_move,main,22
+38,38,17,LR6 HH5,low,high,wanting_to_move,main,22
+39,39,25,LR7 HH3,low,high,wanting_to_move,main,23
+40,40,26,LR7 HH5,low,high,wanting_to_move,main,23
+41,41,28,Son Clave MR1 LH2,medium,low,wanting_to_move,main,4
+42,42,29,Son Clave MR1 LH3,medium,low,wanting_to_move,main,4
+43,43,37,Rumba Clave MR2 LH2,medium,low,wanting_to_move,main,5
+44,44,38,Rumba Clave MR2 LH3,medium,low,wanting_to_move,main,5
+45,45,46,Mariato Clave MR5 LH2,medium,low,wanting_to_move,main,6
+46,46,47,Mariato Clave MR5 LH3,medium,low,wanting_to_move,main,6
+47,47,28,Son Clave MR1 LH2,medium,low,wanting_to_move,main,4
+48,48,29,Son Clave MR1 LH3,medium,low,wanting_to_move,main,4
+49,49,37,Rumba Clave MR2 LH2,medium,low,wanting_to_move,main,5
+50,50,38,Rumba Clave MR2 LH3,medium,low,wanting_to_move,main,5
+51,51,46,Mariato Clave MR5 LH2,medium,low,wanting_to_move,main,6
+52,52,47,Mariato Clave MR5 LH3,medium,low,wanting_to_move,main,6
+53,53,32,Son Clave MR1 MH2,medium,medium,wanting_to_move,main,14
+54,54,33,Son Clave MR1 MH4,medium,medium,wanting_to_move,main,14
+55,55,41,Rumba Clave MR2 MH2,medium,medium,wanting_to_move,main,15
+56,56,42,Rumba Clave MR2 MH4,medium,medium,wanting_to_move,main,15
+57,57,50,Mariato Clave MR5 MH2,medium,medium,wanting_to_move,main,16
+58,58,51,Mariato Clave MR5 MH4,medium,medium,wanting_to_move,main,16
+59,59,32,Son Clave MR1 MH2,medium,medium,wanting_to_move,main,14
+60,60,33,Son Clave MR1 MH4,medium,medium,wanting_to_move,main,14
+61,61,41,Rumba Clave MR2 MH2,medium,medium,wanting_to_move,main,15
+62,62,42,Rumba Clave MR2 MH4,medium,medium,wanting_to_move,main,15
+63,63,50,Mariato Clave MR5 MH2,medium,medium,wanting_to_move,main,16
+64,64,51,Mariato Clave MR5 MH4,medium,medium,wanting_to_move,main,16
+65,65,34,Son Clave MR1 HH3,medium,high,wanting_to_move,main,24
+66,66,35,Son Clave MR1 HH5,medium,high,wanting_to_move,main,24
+67,67,43,Rumba Clave MR2 HH3,medium,high,wanting_to_move,main,25
+68,68,44,Rumba Clave MR2 HH5,medium,high,wanting_to_move,main,25
+69,69,52,Mariato Clave MR5 HH3,medium,high,wanting_to_move,main,26
+70,70,53,Mariato Clave MR5 HH5,medium,high,wanting_to_move,main,26
+71,71,34,Son Clave MR1 HH3,medium,high,wanting_to_move,main,24
+72,72,35,Son Clave MR1 HH5,medium,high,wanting_to_move,main,24
+73,73,43,Rumba Clave MR2 HH3,medium,high,wanting_to_move,main,25
+74,74,44,Rumba Clave MR2 HH5,medium,high,wanting_to_move,main,25
+75,75,52,Mariato Clave MR5 HH3,medium,high,wanting_to_move,main,26
+76,76,53,Mariato Clave MR5 HH5,medium,high,wanting_to_move,main,26
+77,77,55,HR1 LH2,high,low,wanting_to_move,main,7
+78,78,56,HR1 LH3,high,low,wanting_to_move,main,7
+79,79,64,HR3 LH2,high,low,wanting_to_move,main,8
+80,80,65,HR3 LH3,high,low,wanting_to_move,main,8
+81,81,73,HR7 LH2,high,low,wanting_to_move,main,9
+82,82,74,HR7 LH3,high,low,wanting_to_move,main,9
+83,83,55,HR1 LH2,high,low,wanting_to_move,main,7
+84,84,56,HR1 LH3,high,low,wanting_to_move,main,7
+85,85,64,HR3 LH2,high,low,wanting_to_move,main,8
+86,86,65,HR3 LH3,high,low,wanting_to_move,main,8
+87,87,73,HR7 LH2,high,low,wanting_to_move,main,9
+88,88,74,HR7 LH3,high,low,wanting_to_move,main,9
+89,89,59,HR1 MH2,high,medium,wanting_to_move,main,17
+90,90,60,HR1 MH4,high,medium,wanting_to_move,main,17
+91,91,68,HR3 MH2,high,medium,wanting_to_move,main,18
+92,92,69,HR3 MH4,high,medium,wanting_to_move,main,18
+93,93,77,HR7 MH2,high,medium,wanting_to_move,main,19
+94,94,78,HR7 MH4,high,medium,wanting_to_move,main,19
+95,95,59,HR1 MH2,high,medium,wanting_to_move,main,17
+96,96,60,HR1 MH4,high,medium,wanting_to_move,main,17
+97,97,68,HR3 MH2,high,medium,wanting_to_move,main,18
+98,98,69,HR3 MH4,high,medium,wanting_to_move,main,18
+99,99,77,HR7 MH2,high,medium,wanting_to_move,main,19
+100,100,78,HR7 MH4,high,medium,wanting_to_move,main,19
+101,101,61,HR1 HH3,high,high,wanting_to_move,main,27
+102,102,62,HR1 HH5,high,high,wanting_to_move,main,27
+103,103,70,HR3 HH3,high,high,wanting_to_move,main,28
+104,104,71,HR3 HH5,high,high,wanting_to_move,main,28
+105,105,79,HR7 HH3,high,high,wanting_to_move,main,29
+106,106,80,HR7 HH5,high,high,wanting_to_move,main,29
+107,107,61,HR1 HH3,high,high,wanting_to_move,main,27
+108,108,62,HR1 HH5,high,high,wanting_to_move,main,27
+109,109,70,HR3 HH3,high,high,wanting_to_move,main,28
+110,110,71,HR3 HH5,high,high,wanting_to_move,main,28
+111,111,79,HR7 HH3,high,high,wanting_to_move,main,29
+112,112,80,HR7 HH5,high,high,wanting_to_move,main,29
+113,1,91,IR LH2,iso,low,pleasure,main,40
+114,2,92,IR LH3,iso,low,pleasure,main,40
+115,3,97,IR HH3,iso,high,pleasure,main,41
+116,4,98,IR HH5,iso,high,pleasure,main,41
+117,5,1,LR3 LH2,low,low,pleasure,main,1
+118,6,2,LR3 LH3,low,low,pleasure,main,1
+119,7,11,LR6 LH2,low,low,pleasure,main,2
+120,8,12,LR6 LH3,low,low,pleasure,main,2
+121,9,19,LR7 LH2,low,low,pleasure,main,3
+122,10,20,LR7 LH3,low,low,pleasure,main,3
+123,11,1,LR3 LH2,low,low,pleasure,main,1
+124,12,2,LR3 LH3,low,low,pleasure,main,1
+125,13,11,LR6 LH2,low,low,pleasure,main,2
+126,14,12,LR6 LH3,low,low,pleasure,main,2
+127,15,19,LR7 LH2,low,low,pleasure,main,3
+128,16,20,LR7 LH3,low,low,pleasure,main,3
+129,17,5,LR3 MH2,low,medium,pleasure,main,11
+130,18,6,LR3 MH4,low,medium,pleasure,main,11
+131,19,14,LR6 MH2,low,medium,pleasure,main,12
+132,20,15,LR6 MH4,low,medium,pleasure,main,12
+133,21,23,LR7 MH2,low,medium,pleasure,main,13
+134,22,24,LR7 MH4,low,medium,pleasure,main,13
+135,23,5,LR3 MH2,low,medium,pleasure,main,11
+136,24,6,LR3 MH4,low,medium,pleasure,main,11
+137,25,14,LR6 MH2,low,medium,pleasure,main,12
+138,26,15,LR6 MH4,low,medium,pleasure,main,12
+139,27,23,LR7 MH2,low,medium,pleasure,main,13
+140,28,24,LR7 MH4,low,medium,pleasure,main,13
+141,29,7,LR3 HH3,low,high,pleasure,main,21
+142,30,8,LR3 HH5,low,high,pleasure,main,21
+143,31,16,LR6 HH3,low,high,pleasure,main,22
+144,32,17,LR6 HH5,low,high,pleasure,main,22
+145,33,25,LR7 HH3,low,high,pleasure,main,23
+146,34,26,LR7 HH5,low,high,pleasure,main,23
+147,35,7,LR3 HH3,low,high,pleasure,main,21
+148,36,8,LR3 HH5,low,high,pleasure,main,21
+149,37,16,LR6 HH3,low,high,pleasure,main,22
+150,38,17,LR6 HH5,low,high,pleasure,main,22
+151,39,25,LR7 HH3,low,high,pleasure,main,23
+152,40,26,LR7 HH5,low,high,pleasure,main,23
+153,41,28,Son Clave MR1 LH2,medium,low,pleasure,main,4
+154,42,29,Son Clave MR1 LH3,medium,low,pleasure,main,4
+155,43,37,Rumba Clave MR2 LH2,medium,low,pleasure,main,5
+156,44,38,Rumba Clave MR2 LH3,medium,low,pleasure,main,5
+157,45,46,Mariato Clave MR5 LH2,medium,low,pleasure,main,6
+158,46,47,Mariato Clave MR5 LH3,medium,low,pleasure,main,6
+159,47,28,Son Clave MR1 LH2,medium,low,pleasure,main,4
+160,48,29,Son Clave MR1 LH3,medium,low,pleasure,main,4
+161,49,37,Rumba Clave MR2 LH2,medium,low,pleasure,main,5
+162,50,38,Rumba Clave MR2 LH3,medium,low,pleasure,main,5
+163,51,46,Mariato Clave MR5 LH2,medium,low,pleasure,main,6
+164,52,47,Mariato Clave MR5 LH3,medium,low,pleasure,main,6
+165,53,32,Son Clave MR1 MH2,medium,medium,pleasure,main,14
+166,54,33,Son Clave MR1 MH4,medium,medium,pleasure,main,14
+167,55,41,Rumba Clave MR2 MH2,medium,medium,pleasure,main,15
+168,56,42,Rumba Clave MR2 MH4,medium,medium,pleasure,main,15
+169,57,50,Mariato Clave MR5 MH2,medium,medium,pleasure,main,16
+170,58,51,Mariato Clave MR5 MH4,medium,medium,pleasure,main,16
+171,59,32,Son Clave MR1 MH2,medium,medium,pleasure,main,14
+172,60,33,Son Clave MR1 MH4,medium,medium,pleasure,main,14
+173,61,41,Rumba Clave MR2 MH2,medium,medium,pleasure,main,15
+174,62,42,Rumba Clave MR2 MH4,medium,medium,pleasure,main,15
+175,63,50,Mariato Clave MR5 MH2,medium,medium,pleasure,main,16
+176,64,51,Mariato Clave MR5 MH4,medium,medium,pleasure,main,16
+177,65,34,Son Clave MR1 HH3,medium,high,pleasure,main,24
+178,66,35,Son Clave MR1 HH5,medium,high,pleasure,main,24
+179,67,43,Rumba Clave MR2 HH3,medium,high,pleasure,main,25
+180,68,44,Rumba Clave MR2 HH5,medium,high,pleasure,main,25
+181,69,52,Mariato Clave MR5 HH3,medium,high,pleasure,main,26
+182,70,53,Mariato Clave MR5 HH5,medium,high,pleasure,main,26
+183,71,34,Son Clave MR1 HH3,medium,high,pleasure,main,24
+184,72,35,Son Clave MR1 HH5,medium,high,pleasure,main,24
+185,73,43,Rumba Clave MR2 HH3,medium,high,pleasure,main,25
+186,74,44,Rumba Clave MR2 HH5,medium,high,pleasure,main,25
+187,75,52,Mariato Clave MR5 HH3,medium,high,pleasure,main,26
+188,76,53,Mariato Clave MR5 HH5,medium,high,pleasure,main,26
+189,77,55,HR1 LH2,high,low,pleasure,main,7
+190,78,56,HR1 LH3,high,low,pleasure,main,7
+191,79,64,HR3 LH2,high,low,pleasure,main,8
+192,80,65,HR3 LH3,high,low,pleasure,main,8
+193,81,73,HR7 LH2,high,low,pleasure,main,9
+194,82,74,HR7 LH3,high,low,pleasure,main,9
+195,83,55,HR1 LH2,high,low,pleasure,main,7
+196,84,56,HR1 LH3,high,low,pleasure,main,7
+197,85,64,HR3 LH2,high,low,pleasure,main,8
+198,86,65,HR3 LH3,high,low,pleasure,main,8
+199,87,73,HR7 LH2,high,low,pleasure,main,9
+200,88,74,HR7 LH3,high,low,pleasure,main,9
+201,89,59,HR1 MH2,high,medium,pleasure,main,17
+202,90,60,HR1 MH4,high,medium,pleasure,main,17
+203,91,68,HR3 MH2,high,medium,pleasure,main,18
+204,92,69,HR3 MH4,high,medium,pleasure,main,18
+205,93,77,HR7 MH2,high,medium,pleasure,main,19
+206,94,78,HR7 MH4,high,medium,pleasure,main,19
+207,95,59,HR1 MH2,high,medium,pleasure,main,17
+208,96,60,HR1 MH4,high,medium,pleasure,main,17
+209,97,68,HR3 MH2,high,medium,pleasure,main,18
+210,98,69,HR3 MH4,high,medium,pleasure,main,18
+211,99,77,HR7 MH2,high,medium,pleasure,main,19
+212,100,78,HR7 MH4,high,medium,pleasure,main,19
+213,101,61,HR1 HH3,high,high,pleasure,main,27
+214,102,62,HR1 HH5,high,high,pleasure,main,27
+215,103,70,HR3 HH3,high,high,pleasure,main,28
+216,104,71,HR3 HH5,high,high,pleasure,main,28
+217,105,79,HR7 HH3,high,high,pleasure,main,29
+218,106,80,HR7 HH5,high,high,pleasure,main,29
+219,107,61,HR1 HH3,high,high,pleasure,main,27
+220,108,62,HR1 HH5,high,high,pleasure,main,27
+221,109,70,HR3 HH3,high,high,pleasure,main,28
+222,110,71,HR3 HH5,high,high,pleasure,main,28
+223,111,79,HR7 HH3,high,high,pleasure,main,29
+224,112,80,HR7 HH5,high,high,pleasure,main,29
