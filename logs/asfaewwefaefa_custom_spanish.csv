@@ -1,0 +1,101 @@
+subject,trialCode,code,number,name,rhythm,harmony,condition,block,startTime,response,rt,trigger
+asfaewwefaefa,0,0,24,LR7 MH4,low,medium,pleasure,practice,20.22069143994304,2,11.239075599994976,204
+asfaewwefaefa,0,0,81,HR7 HH6,high,high,pleasure,practice,33.48007993993815,3,12.372474300005706,202
+asfaewwefaefa,86,38,62,HR1 HH5,high,high,pleasure,main,52.87342213994998,0,17.001564499994856,142
+asfaewwefaefa,62,14,35,Son Clave MR1 HH5,medium,high,pleasure,main,71.89615743994364,0,17.003877499999362,122
+asfaewwefaefa,95,47,79,HR7 HH3,high,high,pleasure,main,90.92048253995017,0,17.004486899997573,145
+asfaewwefaefa,64,16,44,Rumba Clave MR2 HH5,medium,high,pleasure,main,109.94519813994702,0,17.00394409999717,124
+asfaewwefaefa,76,28,69,HR3 MH4,high,medium,pleasure,main,128.9708747399418,0,17.002907300004154,134
+asfaewwefaefa,68,20,35,Son Clave MR1 HH5,medium,high,pleasure,main,147.9951497399452,0,17.003031400003238,122
+asfaewwefaefa,90,42,80,HR7 HH5,high,high,pleasure,main,167.01948293994064,0,17.00424209999619,146
+asfaewwefaefa,84,36,78,HR7 MH4,high,medium,pleasure,main,186.04450273994007,0,17.00393140000233,136
+asfaewwefaefa,60,12,51,Mariato Clave MR5 MH4,medium,medium,pleasure,main,205.07421923994843,0,17.015876199991908,116
+asfaewwefaefa,49,1,32,Son Clave MR1 MH2,medium,medium,pleasure,main,224.11180683993734,0,17.00157670000044,111
+asfaewwefaefa,96,48,80,HR7 HH5,high,high,pleasure,main,243.13524533994496,0,17.0038121999969,146
+asfaewwefaefa,79,31,59,HR1 MH2,high,medium,pleasure,main,262.1594530399452,0,17.003128199998173,131
+asfaewwefaefa,89,41,79,HR7 HH3,high,high,pleasure,main,281.1844572399423,0,17.00453540000308,145
+asfaewwefaefa,87,39,70,HR3 HH3,high,high,pleasure,main,300.2120068399381,0,17.000831199999084,143
+asfaewwefaefa,94,46,71,HR3 HH5,high,high,pleasure,main,319.2336640399444,0,17.003598399998737,144
+asfaewwefaefa,75,27,68,HR3 MH2,high,medium,pleasure,main,338.25839833993814,0,17.003543200000422,133
+asfaewwefaefa,69,21,43,Rumba Clave MR2 HH3,medium,high,pleasure,main,357.2836054399377,0,17.00342150000506,123
+asfaewwefaefa,88,40,71,HR3 HH5,high,high,pleasure,main,376.3066753399471,0,17.005171299999347,144
+asfaewwefaefa,91,43,61,HR1 HH3,high,high,pleasure,main,395.33231763994263,0,17.003721999994013,141
+asfaewwefaefa,54,6,51,Mariato Clave MR5 MH4,medium,medium,pleasure,main,414.35677743994165,0,17.004139299999224,116
+asfaewwefaefa,80,32,60,HR1 MH4,high,medium,pleasure,main,433.3816653399408,0,17.003761100000702,132
+asfaewwefaefa,50,2,33,Son Clave MR1 MH4,medium,medium,pleasure,main,452.4061541399424,0,17.004278199994587,112
+asfaewwefaefa,55,7,32,Son Clave MR1 MH2,medium,medium,pleasure,main,471.43121743993834,0,17.003499600003124,111
+asfaewwefaefa,57,9,41,Rumba Clave MR2 MH2,medium,medium,pleasure,main,490.45565603995055,0,17.00371940000332,113
+asfaewwefaefa,52,4,42,Rumba Clave MR2 MH4,medium,medium,pleasure,main,519.0181043399498,0,17.011807300004875,114
+asfaewwefaefa,51,3,41,Rumba Clave MR2 MH2,medium,medium,pleasure,main,538.0508260399511,0,17.00299520000408,113
+asfaewwefaefa,56,8,33,Son Clave MR1 MH4,medium,medium,pleasure,main,557.0751518399484,0,17.003669400000945,112
+asfaewwefaefa,92,44,62,HR1 HH5,high,high,pleasure,main,576.1003957399371,0,17.003480300001684,142
+asfaewwefaefa,72,24,53,Mariato Clave MR5 HH5,medium,high,pleasure,main,595.1240323399397,0,17.00383299999521,126
+asfaewwefaefa,63,15,43,Rumba Clave MR2 HH3,medium,high,pleasure,main,614.1493009399419,0,17.00354820000939,123
+asfaewwefaefa,70,22,44,Rumba Clave MR2 HH5,medium,high,pleasure,main,633.1748393399466,0,17.003222400002414,124
+asfaewwefaefa,85,37,61,HR1 HH3,high,high,pleasure,main,652.1990966399462,0,17.00397360000352,141
+asfaewwefaefa,93,45,70,HR3 HH3,high,high,pleasure,main,671.2235673399409,0,17.003065400000196,143
+asfaewwefaefa,66,18,53,Mariato Clave MR5 HH5,medium,high,pleasure,main,690.2481292399461,0,17.003757500002393,126
+asfaewwefaefa,65,17,52,Mariato Clave MR5 HH3,medium,high,pleasure,main,709.2727010399394,0,17.00399009999819,125
+asfaewwefaefa,58,10,42,Rumba Clave MR2 MH4,medium,medium,pleasure,main,728.2977171399398,0,17.003187400012393,114
+asfaewwefaefa,78,30,78,HR7 MH4,high,medium,pleasure,main,747.322539739951,0,17.002894899997045,136
+asfaewwefaefa,81,33,68,HR3 MH2,high,medium,pleasure,main,766.3464100399433,0,17.00425820000237,133
+asfaewwefaefa,61,13,34,Son Clave MR1 HH3,medium,high,pleasure,main,785.3717182399414,0,17.00375790000544,121
+asfaewwefaefa,59,11,50,Mariato Clave MR5 MH2,medium,medium,pleasure,main,804.3968807399506,0,17.002981600002386,115
+asfaewwefaefa,74,26,60,HR1 MH4,high,medium,pleasure,main,823.4217340399482,0,17.003057199995965,132
+asfaewwefaefa,82,34,69,HR3 MH4,high,medium,pleasure,main,842.4457390399475,0,17.00358960000449,134
+asfaewwefaefa,73,25,59,HR1 MH2,high,medium,pleasure,main,861.4711053399369,0,17.003645100005087,131
+asfaewwefaefa,53,5,50,Mariato Clave MR5 MH2,medium,medium,pleasure,main,880.4965457399376,0,17.001752800002578,115
+asfaewwefaefa,77,29,77,HR7 MH2,high,medium,pleasure,main,899.5194839399483,0,17.003864300000714,135
+asfaewwefaefa,71,23,52,Mariato Clave MR5 HH3,medium,high,pleasure,main,918.5438330399484,0,17.004240900001605,125
+asfaewwefaefa,67,19,34,Son Clave MR1 HH3,medium,high,pleasure,main,937.5680485399498,0,17.005173300000024,121
+asfaewwefaefa,83,35,77,HR7 MH2,high,medium,pleasure,main,956.5944844399492,0,17.003172800003085,135
+asfaewwefaefa,0,0,21,LR7 LH4,low,low,wanting_to_move,practice,1007.4780803399481,2,13.348514500001329,201
+asfaewwefaefa,0,0,49,Mariato Clave MR5 MH1,medium,medium,wanting_to_move,practice,1022.846188439944,4,12.556647599994903,203
+asfaewwefaefa,38,38,62,HR1 HH5,high,high,wanting_to_move,main,1039.825805239947,0,17.016448700000183,42
+asfaewwefaefa,4,4,42,Rumba Clave MR2 MH4,medium,medium,wanting_to_move,main,1058.8636137399444,0,17.00310780000291,14
+asfaewwefaefa,18,18,53,Mariato Clave MR5 HH5,medium,high,wanting_to_move,main,1077.8880313399422,0,17.003833299997495,26
+asfaewwefaefa,7,7,32,Son Clave MR1 MH2,medium,medium,wanting_to_move,main,1096.9125021399377,0,17.0042717000033,11
+asfaewwefaefa,12,12,51,Mariato Clave MR5 MH4,medium,medium,wanting_to_move,main,1115.937819439947,0,17.003703700000187,16
+asfaewwefaefa,19,19,34,Son Clave MR1 HH3,medium,high,wanting_to_move,main,1134.9626363399439,0,17.003020999996806,21
+asfaewwefaefa,3,3,41,Rumba Clave MR2 MH2,medium,medium,wanting_to_move,main,1153.986866039937,0,17.003548699998646,13
+asfaewwefaefa,44,44,62,HR1 HH5,high,high,wanting_to_move,main,1173.0120811399393,0,17.003289300002507,42
+asfaewwefaefa,24,24,53,Mariato Clave MR5 HH5,medium,high,wanting_to_move,main,1192.0368373399397,0,17.003028100007214,26
+asfaewwefaefa,2,2,33,Son Clave MR1 MH4,medium,medium,wanting_to_move,main,1211.0608009399439,0,17.00416480000422,12
+asfaewwefaefa,31,31,59,HR1 MH2,high,medium,wanting_to_move,main,1230.0854990399384,0,17.003433100006077,31
+asfaewwefaefa,32,32,60,HR1 MH4,high,medium,wanting_to_move,main,1249.1102572399395,0,17.00425750001159,32
+asfaewwefaefa,40,40,71,HR3 HH5,high,high,wanting_to_move,main,1268.133974739947,0,17.00523880000401,44
+asfaewwefaefa,43,43,61,HR1 HH3,high,high,wanting_to_move,main,1287.1598113399377,0,17.003484799992293,41
+asfaewwefaefa,46,46,71,HR3 HH5,high,high,wanting_to_move,main,1306.1841888399504,0,17.00390010001138,44
+asfaewwefaefa,34,34,69,HR3 MH4,high,medium,wanting_to_move,main,1325.2088425399415,0,17.004562699992675,34
+asfaewwefaefa,33,33,68,HR3 MH2,high,medium,wanting_to_move,main,1344.2338029399398,0,17.003733700010343,33
+asfaewwefaefa,17,17,52,Mariato Clave MR5 HH3,medium,high,wanting_to_move,main,1363.2581339399476,0,17.004309099997045,25
+asfaewwefaefa,20,20,35,Son Clave MR1 HH5,medium,high,wanting_to_move,main,1382.2823048399441,0,17.00447119999444,22
+asfaewwefaefa,22,22,44,Rumba Clave MR2 HH5,medium,high,wanting_to_move,main,1401.3070449399384,0,17.003922300005797,24
+asfaewwefaefa,45,45,70,HR3 HH3,high,high,wanting_to_move,main,1420.331966439946,0,17.004365400003735,43
+asfaewwefaefa,39,39,70,HR3 HH3,high,high,wanting_to_move,main,1439.356942239945,0,17.003784599990468,43
+asfaewwefaefa,28,28,69,HR3 MH4,high,medium,wanting_to_move,main,1458.381871239937,0,17.004406899999594,34
+asfaewwefaefa,9,9,41,Rumba Clave MR2 MH2,medium,medium,wanting_to_move,main,1477.4073327399383,0,17.002932799994596,13
+asfaewwefaefa,27,27,68,HR3 MH2,high,medium,wanting_to_move,main,1516.7475409399485,0,17.011679299990647,33
+asfaewwefaefa,30,30,78,HR7 MH4,high,medium,wanting_to_move,main,1535.7791226399422,0,17.004542700000457,36
+asfaewwefaefa,23,23,52,Mariato Clave MR5 HH3,medium,high,wanting_to_move,main,1554.8046087399416,0,17.00354979999247,25
+asfaewwefaefa,5,5,50,Mariato Clave MR5 MH2,medium,medium,wanting_to_move,main,1573.8289947399462,0,17.004284599999664,15
+asfaewwefaefa,48,48,80,HR7 HH5,high,high,wanting_to_move,main,1592.8537875399488,0,17.004104699997697,46
+asfaewwefaefa,1,1,32,Son Clave MR1 MH2,medium,medium,wanting_to_move,main,1611.8782964399434,0,17.004080900005647,11
+asfaewwefaefa,16,16,44,Rumba Clave MR2 HH5,medium,high,wanting_to_move,main,1630.9028320399375,0,17.004403999992064,24
+asfaewwefaefa,8,8,33,Son Clave MR1 MH4,medium,medium,wanting_to_move,main,1649.9279811399465,0,17.003635100001702,12
+asfaewwefaefa,42,42,80,HR7 HH5,high,high,wanting_to_move,main,1668.9522002399463,0,17.003809400004684,46
+asfaewwefaefa,11,11,50,Mariato Clave MR5 MH2,medium,medium,wanting_to_move,main,1687.9773562399496,0,17.003765999994357,15
+asfaewwefaefa,15,15,43,Rumba Clave MR2 HH3,medium,high,wanting_to_move,main,1707.0017655399424,0,17.00426349999907,23
+asfaewwefaefa,6,6,51,Mariato Clave MR5 MH4,medium,medium,wanting_to_move,main,1726.0283754399425,0,17.00198650000675,16
+asfaewwefaefa,14,14,35,Son Clave MR1 HH5,medium,high,wanting_to_move,main,1745.050464839951,0,17.004757499991683,22
+asfaewwefaefa,35,35,77,HR7 MH2,high,medium,wanting_to_move,main,1764.0766653399478,0,17.003210800001398,35
+asfaewwefaefa,21,21,43,Rumba Clave MR2 HH3,medium,high,wanting_to_move,main,1783.101283639946,0,17.002611699994304,23
+asfaewwefaefa,41,41,79,HR7 HH3,high,high,wanting_to_move,main,1802.1250947399385,0,17.004527700002654,45
+asfaewwefaefa,13,13,34,Son Clave MR1 HH3,medium,high,wanting_to_move,main,1821.1500705399376,0,17.00406870000006,21
+asfaewwefaefa,36,36,78,HR7 MH4,high,medium,wanting_to_move,main,1840.2277372399403,0,17.000825999988592,36
+asfaewwefaefa,47,47,79,HR7 HH3,high,high,wanting_to_move,main,1859.250079239937,0,17.00366390000272,45
+asfaewwefaefa,26,26,60,HR1 MH4,high,medium,wanting_to_move,main,1878.2745568399405,0,17.003571600012947,32
+asfaewwefaefa,10,10,42,Rumba Clave MR2 MH4,medium,medium,wanting_to_move,main,1897.2978171399445,0,17.004219499998726,14
+asfaewwefaefa,37,37,61,HR1 HH3,high,high,wanting_to_move,main,1916.3237999399425,0,17.002967599997646,41
+asfaewwefaefa,29,29,77,HR7 MH2,high,medium,wanting_to_move,main,1935.3477501399466,0,17.004114800001844,35
+asfaewwefaefa,25,25,59,HR1 MH2,high,medium,wanting_to_move,main,1954.372059739937,0,17.004720400000224,31

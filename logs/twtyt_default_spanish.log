@@ -1,0 +1,11 @@
+16.6903 	WARNING 	Monitor specification not found. Creating a temporary one...
+16.7039 	WARNING 	User requested fullscreen with size [800 600], but screen is actually [1920, 1080]. Using actual size
+0.9034 	DATA 	Keypress: space
+1.3762 	DATA 	Keypress: space
+1.3893 	EXP 	unnamed TextStim: text = 'patrón musical 1 / 2'
+3.3938 	EXP 	Sound  started
+15.5733 	DATA 	Keypress: 2
+15.5889 	EXP 	unnamed TextStim: text = 'patrón musical 2 / 2'
+17.3925 	DATA 	Keypress: escape
+17.3926 	EXP 	Global key event: shutdown. Calling <function quit_and_save at 0x0000013D4FD70488>.
+17.4430 	EXP 	window1: mouseVisible = True
