@@ -96,15 +96,20 @@ resp_keys = ['1','2','3','4','5']
 # Collect participant identity and options:
 ID_box = gui.Dlg(title = 'Subject identity')
 ID_box.addField('ID: ')
-ID_box.addField('counterbalance (1 or 2): ')
+ID_box.addField('block order (Random order: Leave blank; "liking" first: 1; "wanting to move" first: 2): ')
 ID_box.addField('practice? (YES: 1, higher or blank; NO: 0): ')
 
 sub_id = ID_box.show()
 
 # change counterbalance order
 block_order = [0,1]
-if sub_id[1] == '2':
+rnd.shuffle(block_order)
+
+if sub_id[1] == '1':
+   block_order = [0,1]
+elif sub_id[1] == '2':
    block_order = [1,0]
+
 
 # create switch to do practice block or not
 practice_switch = 1
