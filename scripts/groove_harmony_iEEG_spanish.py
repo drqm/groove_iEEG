@@ -44,6 +44,8 @@ import numpy as np
 import random as rnd
 import os
 import csv
+from triggers import setParallelData
+setParallelData(0)
 
 ### Set these parameters according to your system
 # set the project directory
@@ -52,14 +54,8 @@ os.chdir('C:/Users/au571303/Documents/projects/groove_iEEG')
 # specify the frame rate of your screen
 frate = 60 #48 #60 #120 #
 
-# specify whether to send triggers or not (1=yes, 0=no)
-send_triggers = 0
-
 #################################################
 prd = 1000/frate # inter frame interval in ms
-if send_triggers:
-    from triggers import setParallelData # only if
-    setParallelData(0)
 
 # Load stimulus list and store in a dictionary
 # change the stim file below to use different stimuli 
@@ -102,6 +98,7 @@ ID_box = gui.Dlg(title = 'Subject identity')
 ID_box.addField('ID: ')
 ID_box.addField('counterbalance (1 or 2): ')
 ID_box.addField('practice? (YES: 1, higher or blank; NO: 0): ')
+
 sub_id = ID_box.show()
 
 # change counterbalance order
@@ -229,18 +226,14 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
         nextFlip = win.getFutureFlipTime(clock='ptb')
         startTime = win.getFutureFlipTime(clock=exp_time)
         trigger = int(s_dict['trigger'][midx])
-        if send_triggers:
-            win.callOnFlip(setParallelData, int(trigger)) # only if MEG in Aarhus
-        win.callOnFlip(print, trigger)
+        win.callOnFlip(setParallelData, int(trigger)) # only if MEG in Aarhus
         b_sounds[m].play(when = nextFlip)
         RT.reset()
         # we synchronize stimulus delivery with screen frames for time acc.
         for frs in range(int(np.round(50/prd))): # wait 10 seconds
             fixation.draw()
             win.flip()
-        if send_triggers:
-            win.callOnFlip(setParallelData, 0) # only if MEG in Aarhus
-        win.callOnFlip(print, '0')
+        win.callOnFlip(setParallelData, 0) # only if MEG in Aarhus
         for frs in range(int(np.round(9950/prd))): # wait 10 seconds
             fixation.draw()
             win.flip()

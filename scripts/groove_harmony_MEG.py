@@ -45,8 +45,8 @@ import random as rnd
 import os
 import csv
 # Uncomment only if MEG in Aarhus:
-#from triggers import setParallelData # only if
-#setParallelData(0)
+from triggers import setParallelData # only if
+setParallelData(0)
 
 # set the project directory
 os.chdir('C:/Users/au571303/Documents/projects/groove_iEEG')
@@ -235,12 +235,15 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
         nextFlip = win.getFutureFlipTime(clock='ptb')
         startTime = win.getFutureFlipTime(clock=exp_time)
         trigger = int(s_dict['trigger'][midx])
-        #win.callOnFlip(setParallelData, int(trigger)) # only if MEG in Aarhus
-        win.callOnFlip(print, trigger)
+        win.callOnFlip(setParallelData, int(trigger)) # only if MEG in Aarhus
         b_sounds[m].play(when = nextFlip)
         RT.reset()
         # we synchronize stimulus delivery with screen frames for time acc.
-        for frs in range(int(np.round(10000/prd))): # wait 10 seconds
+        for frs in range(int(np.round(50/prd))): # wait 0.05 seconds
+            fixation.draw()
+            win.flip()
+        win.callOnFlip(setParallelData, 0) # only if MEG in Aarhus
+        for frs in range(int(np.round(9950/prd))): # wait 9.95 seconds
             fixation.draw()
             win.flip()
         event.clearEvents(eventType='keyboard')

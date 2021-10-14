@@ -1,4 +1,5 @@
-54121 -+sycu 6y import parallel
+#54121 -+sycu 6y 
+from psychopy import parallel
 import platform
 
 PLATFORM = platform.platform()
@@ -6,7 +7,8 @@ if 'Linux' in PLATFORM:
     port = parallel.ParallelPort(address='/dev/parport0')  # on MEG stim PC
 else:  # on Win this will work, on Mac we catch error below
     try:
-        port = parallel.ParallelPort(address=0xDFF8)  # on MEG stim PC
+        port = parallel.setPortAddress(address='0xDFF8')
+        #port = parallel.ParallelPort(address=0xDFF8)  # on MEG stim PC
     except NotImplementedError:
         port = []
 # NB problems getting parallel port working under conda env
@@ -16,15 +18,10 @@ else:  # on Win this will work, on Mac we catch error below
 # port = parallel
 
 # Figure out whether to flip pins or fake it
-try:
-    port.setData(128)
-except NotImplementedError:
+if port:
     def setParallelData(code=1):
-        if code > 0:
-            # logging.exp('TRIG %d (Fake)' % code)
-            print('TRIG %d (Fake)' % code)
-            pass
+        port.setData(code)
+        print('trigger sent {}'.format(code))
 else:
-    port.setData(0)
-    setParallelData = port.setData
-
+    def setParallelData(code=1):
+        print('trigger not sent {}'.format(code))
