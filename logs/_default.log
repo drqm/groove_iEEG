@@ -1,0 +1,20 @@
+1.3983 	WARNING 	Speech-to-text recognition module not available (use command `pip install SpeechRecognition` to get it. Transcription will be unavailable.
+1.5502 	WARNING 	Could not initiate port: [Errno 2] No such file or directory: '/dev/parport0'
+24.1270 	WARNING 	Monitor specification not found. Creating a temporary one...
+24.1446 	WARNING 	User requested fullscreen with size [800 600], but screen is actually [1366, 768]. Using actual size
+7.0928 	DATA 	Keypress: space
+10.5785 	DATA 	Keypress: space
+10.5830 	EXP 	unnamed TextStim: text = 'trial 1 / 2'
+12.5868 	EXP 	Sound  started
+23.9161 	DATA 	Keypress: 3
+23.9320 	EXP 	unnamed TextStim: text = 'trial 2 / 2'
+25.9357 	EXP 	Sound  started
+37.1003 	DATA 	Keypress: 4
+40.0835 	DATA 	Keypress: space
+40.0880 	EXP 	unnamed TextStim: text = 'trial 1 / 48'
+42.0916 	EXP 	Sound  started
+52.4471 	DATA 	Keypress: 4
+52.4633 	EXP 	unnamed TextStim: text = 'trial 2 / 48'
+53.2649 	DATA 	Keypress: escape
+53.2650 	EXP 	Global key event: shutdown. Calling <function quit_and_save at 0x7f35ebe6e7b8>.
+53.2782 	EXP 	window1: mouseVisible = True

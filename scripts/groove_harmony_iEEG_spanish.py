@@ -48,15 +48,16 @@ from triggers import setParallelData
 setParallelData(0)
 
 ### Set these parameters according to your system
-# set the project directory
-os.chdir('C:/Users/au571303/Documents/projects/groove_iEEG')
+# set the project directory (relative path)
+my_path = os.path.abspath(os.path.dirname(__file__))
+os.chdir(my_path)
+os.chdir('..')
 
 # specify the frame rate of your screen
 frate = 60 #48 #60 #120 #
-
-#################################################
 prd = 1000/frate # inter frame interval in ms
 
+#################################################
 # Load stimulus list and store in a dictionary
 # change the stim file below to use different stimuli 
 stim_file = open('stimuli/stim_list.csv',newline = '') 

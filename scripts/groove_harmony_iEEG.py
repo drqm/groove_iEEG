@@ -33,7 +33,6 @@ Experimental design
 -trials randomized for each subject
 -one break in the 24th trial of each block.
 """
-
 """
 'IMPORT'
 """
@@ -48,7 +47,10 @@ from triggers import setParallelData
 setParallelData(0)
 
 # set the project directory
-os.chdir('C:/Users/au571303/Documents/projects/groove_iEEG')
+my_path = os.path.abspath(os.path.dirname(__file__))
+os.chdir(my_path)
+os.chdir('..')
+#os.chdir('C:/Users/au571303/Documents/projects/groove_iEEG')
 
 # specify the frame rate of your screen
 frate = 60 #48 #60 #120 #
