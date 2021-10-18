@@ -52,10 +52,6 @@ os.chdir(my_path)
 os.chdir('..')
 #os.chdir('C:/Users/au571303/Documents/projects/groove_iEEG')
 
-# specify the frame rate of your screen
-frate = 60 #48 #60 #120 #
-prd = 1000/frate # inter frame interval in ms
-
 # Load stimulus list and store in a dictionary
 # change the stim file below to use different stimuli 
 stim_file = open('stimuli/stim_list.csv',newline = '') 
@@ -117,6 +113,11 @@ if sub_id[2] == '0':
 # create display window and corresponding texts
 txt_color = 'white'
 win = visual.Window(fullscr=True, color='black')
+
+# set frame rate
+frate = np.round(win.getActualFrameRate())
+prd = 1000 / frate
+print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 # create all the text to be displayed
 fixation = visual.TextStim(win, text='+', color=txt_color, height=0.2)

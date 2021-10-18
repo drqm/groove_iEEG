@@ -47,15 +47,10 @@ import csv
 from triggers import setParallelData
 setParallelData(0)
 
-### Set these parameters according to your system
-# set the project directory (relative path)
+# set project directory (relative path)
 my_path = os.path.abspath(os.path.dirname(__file__))
 os.chdir(my_path)
 os.chdir('..')
-
-# specify the frame rate of your screen
-frate = 60 #48 #60 #120 #
-prd = 1000/frate # inter frame interval in ms
 
 #################################################
 # Load stimulus list and store in a dictionary
@@ -98,7 +93,7 @@ resp_keys = ['1','2','3','4','5']
 ID_box = gui.Dlg(title = 'Subject identity')
 ID_box.addField('ID: ')
 ID_box.addField('block order (Random order: Leave blank; "liking" first: 1; "wanting to move" first: 2): ')
-ID_box.addField('practice? (YES: 1, higher or blank; NO: 0): ')
+ID_box.addField('practice? (YES: 1 or blank; NO: 0): ')
 
 sub_id = ID_box.show()
 
@@ -120,6 +115,11 @@ if sub_id[2] == '0':
 # create display window and corresponding texts
 txt_color = 'white'
 win = visual.Window(fullscr=True, color='black')
+
+# set frame rate
+frate = np.round(win.getActualFrameRate())
+prd = 1000 / frate
+print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 # create all the text to be displayed
 fixation = visual.TextStim(win, text='+', color=txt_color, height=0.2)

@@ -1,0 +1,8 @@
+subject,trialCode,code,number,name,rhythm,harmony,condition,block,startTime,response,rt,trigger
+,0,0,21,LR7 LH4,low,low,wanting_to_move,practice,4.905149599420838,3,11.170312199974433,201
+,0,0,49,Mariato Clave MR5 MH1,medium,medium,wanting_to_move,practice,18.09716899949126,4,10.67221220000647,203
+,44,44,62,HR1 HH5,high,high,wanting_to_move,main,31.951889299438335,2,12.445587900001556,42
+,36,36,78,HR7 MH4,high,medium,wanting_to_move,main,46.418012999463826,1,10.307221800088882,36
+,5,5,50,Mariato Clave MR5 MH2,medium,medium,wanting_to_move,main,58.74600039946381,3,11.52166309999302,15
+,26,26,60,HR1 MH4,high,medium,wanting_to_move,main,72.2898935994599,3,10.206189399934374,32
+,19,19,34,Son Clave MR1 HH3,medium,high,wanting_to_move,main,84.5168599995086,3,11.322596200043336,21
