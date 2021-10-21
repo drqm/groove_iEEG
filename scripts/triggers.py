@@ -4,7 +4,7 @@ import serial
 
 ##### Set port address to match your local machine
 
-paddress = '/dev/parport0' # '0xDFF8' in Windows
+paddress = '/dev/parport0' # '0xDFF8' or 'COM1' in Windows
 
 ##################################################
 
@@ -25,7 +25,7 @@ if port_type == 'parallel':
         print('trigger sent {}'.format(code))
 elif port_type == 'serial':
     def setParallelData(code=1):
-        port.write(code)
+        port.write(bytes(str(code).encode()))
         print('trigger sent {}'.format(code))
 else:
     def setParallelData(code=1):
