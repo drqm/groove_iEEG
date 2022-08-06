@@ -6,15 +6,15 @@ Groove Harmony iEEG study
 Script to present stimuli and record participants' ratings (David Quiroga-Martinez)
 Currently optimized for iEEG, but could be run for MEG or EEG as well.
 
-Experiment where participants (musicians and non-musicans) listen to a musical 
-pattern then rate, in one block, how much they wanted to move or, in another 
-block, how much they liked it using key presses (1-5). 
+Experiment where participants (musicians and non-musicans) listen to a musical
+pattern then rate, in one block, how much they wanted to move or, in another
+block, how much they liked it using key presses (1-5).
 
 RUNS FROM PSYCHOPY STANDALONE APP. NOT TESTED OUTSIDE STANDALONE APP.
 **********************
 Stimuli (built by Tomas Matthews)
 ***********************
-Stimuli consist of musical patterns lasting 10 seconds that vary rhythm 
+Stimuli consist of musical patterns lasting 10 seconds that vary rhythm
 and harmonic complexity
     2 levels: medium or high for both rhythm and harmonic complexity
     4 conditions: MM,MH,HM,HH
@@ -37,24 +37,24 @@ Experimental design
 'IMPORT'
 """
 from psychopy import prefs
-prefs.hardware['audioLib'] = ['PTB']
+prefs.hardware['audioLib'] = ['sounddevice']
 from psychopy import visual, core, sound, event, gui, logging#, parallel
 import numpy as np
 import random as rnd
 import os
 import csv
-from triggers import setParallelData
-setParallelData(0)
+# from triggers import setParallelData
+# setParallelData(0)
 
-# set project directory (relative path)
+# set the project directory
 my_path = os.path.abspath(os.path.dirname(__file__))
 os.chdir(my_path)
 os.chdir('..')
+#os.chdir('C:/Users/au571303/Documents/projects/groove_iEEG')
 
-#################################################
 # Load stimulus list and store in a dictionary
-# change the stim file below to use different stimuli 
-stim_file = open('stimuli/stim_list.csv',newline = '') 
+# change the stim file below to use different stimuli
+stim_file = open('stimuli/stim_list.csv',newline = '')
 stim_obj = csv.DictReader(stim_file,delimiter = ',')
 blocks = {}
 for row in stim_obj:
@@ -64,8 +64,8 @@ for row in stim_obj:
         blocks[row['condition']][row['block']].setdefault(column, []).append(value)
 
 # load sounds
-sounds = {s: sound.Sound('stimuli/{:>02d}.wav'.format(int(s))) 
-            for s in np.unique(blocks['pleasure']['main']['number'] + 
+sounds = {s: sound.Sound('stimuli/{:>02d}.wav'.format(int(s)))
+            for s in np.unique(blocks['pleasure']['main']['number'] +
                                 blocks['pleasure']['practice']['number'] +
                                 blocks['wanting_to_move']['practice']['number'] +
                                 blocks['wanting_to_move']['main']['number'])}
@@ -112,71 +112,71 @@ if sub_id[2] == '0':
 pcolor = 'black'
 txt_color = 'white'
 if sub_id[3] == 'yes':
-    pcolor= txt_color
-# create display window and corresponding texts
+   pcolor = txt_color
 
+# create display window and corresponding texts
 win = visual.Window(fullscr=True, color='black')
 
 # set frame rate
-frate = np.round(win.getActualFrameRate())
-prd = 1000 / frate
-print('screen fps = {} - cycle duration = {}'.format(frate, prd))
+# frate = np.round(win.getActualFrameRate())
+# prd = 1000 / frate
+# print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 # create all the text to be displayed
 fixation = visual.TextStim(win, text='+', color=txt_color, height=0.2)
-blocks['wanting_to_move']['instr'] =  visual.TextStim(win, 
-                text = 'A continuación usted escuchará varios patrones musicales.\n\n'
-                'Luego de cada uno, usted deberá valorar '
-                'qué tanto el patrón musical lo HIZO SENTIR DESEOS DE MOVERSE, '
-                'así:\n\n '
-                'nada   < 1    2    3    4    5 >  mucho\n\n'
-                'Para responder por favor presione 1, 2, 3, 4 or 5 en el teclado.\n\n'
-                'Presione barra espaciadora para comenzar.',
+blocks['wanting_to_move']['instr'] =  visual.TextStim(win,
+                text = 'You will hear various short musical patterns.\n\n'
+                'After each one, you will be asked to rate '
+                'the degree to which the musical pattern MADE YOU WANT '
+                ' TO MOVE, as follows:\n\n '
+                'not at all  < 1    2    3    4    5 >  very much\n\n'
+                'To answer, please type 1, 2, 3, 4 or 5 on your keyboard.\n\n'
+                'Press spacebar to continue.',
                 color=txt_color, wrapWidth=1.8)
 
-blocks['pleasure']['instr'] =  visual.TextStim(win, 
-                text = 'A continuación usted escuchará varios patrones musicales.\n\n'
-                'Luego de cada uno, usted deberá valorar '
-                'QUÉ TANTO LE GUSTÓ el patrón musical, así:\n\n'
-                'nada   < 1    2    3    4    5 >    mucho\n\n'
-                'Para responder por favor presione 1, 2, 3, 4 or 5 en el teclado.\n\n'
-                'Presione barra espaciadora para comenzar.',
+blocks['pleasure']['instr'] =  visual.TextStim(win,
+                text = 'You will hear various short musical patterns.\n\n'
+                'After each pattern, you will be asked to rate '
+                'HOW MUCH YOU LIKED the musical pattern, as follows:\n\n'
+                'not at all  < 1    2    3    4    5 >  very much\n\n'
+                'To answer, please type 1, 2, 3, 4 or 5 on your keyboard.\n\n'
+                'Press spacebar to continue.',
                 color=txt_color, wrapWidth=1.8)
 
-blocks['pleasure']['ratingtxt'] = pleasure_txt = visual.TextStim(win, 
-                text = 'Qué tanto le gustó?\n\n'
-                       'nada   < 1    2    3    4    5 >    mucho\n\n',
+blocks['pleasure']['ratingtxt'] = pleasure_txt = visual.TextStim(win,
+                text = 'How much did you like it?\n\n'
+                       'not at all  < 1    2    3    4    5 >  very much',
                 color=txt_color, wrapWidth=1.8)
 
-blocks['wanting_to_move']['ratingtxt'] = visual.TextStim(win, 
-                text = 'Qué tanto sintió deseos de moverse?\n\n'
-                   'nada   < 1    2    3    4    5 >  mucho\n\n',
+blocks['wanting_to_move']['ratingtxt'] = visual.TextStim(win,
+                text = 'How much did you want to move?\n\n'
+                    'not at all  < 1    2    3    4    5 >  very much',
                 color=txt_color, wrapWidth=1.8)
 
-practice = visual.TextStim(win, 
-                text = 'Primero, vamos a hacer unos ejemplos de prueba.\n\n'
-                    'Presione barra espaciadora para escuchar el primer patrón musical.',
+practice = visual.TextStim(win,
+                text = 'First, let us do some practice trials.\n\n'
+                    'When ready, press spacebar to hear the first musical pattern.',
                 color=txt_color, wrapWidth=1.8)
 
 main_task = visual.TextStim(win,
-                text = 'Este es el final de los ejemplos de práctica.\n\n'
-                    'Presione barra espaciadora para empezara la prueba principal.',
+                text = 'This is the end of the practice trials.\n\n'
+                    'When ready, press spacebar to start the main task.',
                 color=txt_color, wrapWidth=1.8)
 
 break_txt = visual.TextStim(win,
-                text = 'Ahora es tiempo para una pequeña pausa.\n'
-                        'Tómese el tiempo necesario.\n\n'
-                        'Presione barra espaciadora para continuar.',
+                text = 'Now it is time for a little break.\n'
+                        'Take as much time as you need.\n\n'
+                        'Press spacebar when ready to continue.',
                 color=txt_color, wrapWidth=1.8)
 
-block_end_txt = visual.TextStim(win, 
-                text = 'Este es el final del primer bloque.\n\n'
-                        'Ahora tome una pequeña pausa y presione barra espaciadora para continuar.',
+block_end_txt = visual.TextStim(win,
+                text = 'This is the end of the first block.\n\n'
+                        'Now take a little break and press space when ready to continue',
                 color=txt_color, wrapWidth=1.8)
 
-end_txt = visual.TextStim(win, 
-                text = 'Este es el final del experimento.\n'
-                        'Gracias por participar!',
+end_txt = visual.TextStim(win,
+                text = 'This is the end of the experiment.\n'
+                        'Thanks for participating!',
                 color=txt_color, wrapWidth=1.8)
 
 trialtxt = visual.TextStim(win, text='',color=txt_color, height=0.1)
@@ -188,11 +188,11 @@ exp_time = core.Clock()
 
 # set default log file
 logging.setDefaultClock(exp_time)
-log_fn_def = 'logs/' + sub_id[0] +  '_default_spanish.log'
+log_fn_def = 'logs/' + sub_id[0] +  '_default.log'
 lastLog = logging.LogFile(log_fn_def, level=logging.INFO, filemode='a')
 
 # set custom log file
-log_fn_cus = 'logs/' + sub_id[0] +  '_custom_spanish.csv'
+log_fn_cus = 'logs/' + sub_id[0] +  '_custom.csv'
 logfile = open(log_fn_cus,'w')
 logfile.write("subject,trialCode,code,number,name,rhythm,harmony,"
               "condition,block,startTime,response,rt,trigger\n")
@@ -200,7 +200,7 @@ logfile.write("subject,trialCode,code,number,name,rhythm,harmony,"
 # make function to loop over trials and present the stimuli
 def block_run(s_dict, s_order, b_sounds, breaks=[]):
     """
-    s_dict: dictionary containing the stimulus list and metadata, as loaded 
+    s_dict: dictionary containing the stimulus list and metadata, as loaded
             from a csv file. Must contain the lists:
 
                 'trial_code': code of the trial before randomization
@@ -223,7 +223,7 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
     """
     for mtrial, midx in enumerate(s_order): # loop over trials
         m = s_dict['number'][midx]
-        trialtxt.setText('patrón musical {} / {}'.format(mtrial + 1, len(s_order)))
+        trialtxt.setText('trial {} / {}'.format(mtrial + 1, len(s_order)))
         trialtxt.draw()
         #fixation.draw()
         win.flip()
@@ -231,24 +231,22 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
         fixation.draw()
         win.flip()
         core.wait(1)
-        nextFlip = win.getFutureFlipTime(clock='ptb')
-        startTime = win.getFutureFlipTime(clock=exp_time)
+        #nextFlip = win.getFutureFlipTime(clock='ptb')
+        #startTime = win.getFutureFlipTime(clock=exp_time)
+        startTime = exp_time.getTime()
         trigger = int(s_dict['trigger'][midx])
-        win.callOnFlip(setParallelData, int(trigger)) # only if MEG in Aarhus
-        b_sounds[m].play(when = nextFlip)
+        #win.callOnFlip(setParallelData, int(trigger)) # only if MEG in Aarhus
+        b_sounds[m].play()
         RT.reset()
-        
-        # we synchronize stimulus delivery with screen frames for time acc.
-        for frs in range(int(np.round(50/prd))): # wait 10 seconds
-            fixation.draw()
-            pdiode.draw()
-            win.flip()
-        win.callOnFlip(setParallelData, 0) # only if MEG in Aarhus
-        for frs in range(int(np.round(9950/prd))): # wait 10 seconds
-            fixation.draw()
-            win.flip()
-        event.clearEvents(eventType=None) #'keyboard')
-        
+        pdiode.draw()
+        fixation.draw()
+        win.flip()
+        core.wait(0.05)
+        fixation.draw()
+        win.flip()
+        core.wait(9.95)
+        event.clearEvents(eventType=None)#'keyboard')
+
         resp = None
         while resp == None:
             blocks[s_dict['condition'][midx]]['ratingtxt'].draw()
@@ -276,6 +274,7 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
 bnames = ['pleasure','wanting_to_move']
 bnames = [bnames[b] for b in block_order] # counterbalance blocks
 for bidx,b in enumerate(bnames):
+    
     #Flicker task start
     for i in range(5):
         pdiode.draw()
@@ -287,7 +286,7 @@ for bidx,b in enumerate(bnames):
     blocks[b]['instr'].draw()
     win.flip()
     event.waitKeys()
-    
+
     # run practice trials if requested
     if practice_switch == 1:
         practice.draw()
@@ -302,7 +301,7 @@ for bidx,b in enumerate(bnames):
 
     #run main task
     block_run(blocks[b]['main'],blocks[b]['main']['order'], sounds, breaks = [23])
-    
+
     if  (bidx + 1) < len(bnames):
         block_end_txt.draw()
         win.flip()
@@ -311,6 +310,7 @@ for bidx,b in enumerate(bnames):
 end_txt.draw()
 win.flip()
 core.wait(2)
+
 #Flicker task end
 for i in range(5):
     pdiode.draw()

@@ -50,8 +50,8 @@ setParallelData(0)
 my_path = os.path.abspath(os.path.dirname(__file__))
 os.chdir(my_path)
 os.chdir('..')
-#os.chdir('C:/Users/au571303/Documents/projects/groove_iEEG')
 
+#################################################
 # Load stimulus list and store in a dictionary
 # change the stim file below to use different stimuli 
 stim_file = open('stimuli/stim_list.csv',newline = '') 
@@ -93,7 +93,7 @@ ID_box = gui.Dlg(title = 'Subject identity')
 ID_box.addField('ID: ')
 ID_box.addField('block order (Random order: Leave blank; "liking" first: 1; "wanting to move" first: 2): ')
 ID_box.addField('practice? (YES: 1 or blank; NO: 0): ')
-
+ID_box.addField('photodiode? (yes/no): ','no')
 sub_id = ID_box.show()
 
 # change counterbalance order
@@ -109,9 +109,12 @@ elif sub_id[1] == '2':
 practice_switch = 1
 if sub_id[2] == '0':
     practice_switch = 0
-
-# create display window and corresponding texts
+pcolor = 'black'
 txt_color = 'white'
+if sub_id[3] == 'yes':
+    pcolor= txt_color
+# create display window and corresponding texts
+
 win = visual.Window(fullscr=True, color='black')
 
 # set frame rate
@@ -177,6 +180,7 @@ end_txt = visual.TextStim(win,
                 color=txt_color, wrapWidth=1.8)
 
 trialtxt = visual.TextStim(win, text='',color=txt_color, height=0.1)
+pdiode = visual.Rect(win, size = (.3,.35), pos = (-1,-1),fillColor=pcolor)
 
 #set clocks
 RT = core.Clock()
@@ -237,6 +241,7 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
         # we synchronize stimulus delivery with screen frames for time acc.
         for frs in range(int(np.round(50/prd))): # wait 0.05 seconds
             fixation.draw()
+            pdiode.draw()
             win.flip()
         win.callOnFlip(setParallelData, 0) # only if MEG in Aarhus
         for frs in range(int(np.round(9950/prd))): # wait 9.95 seconds
@@ -271,7 +276,13 @@ def block_run(s_dict, s_order, b_sounds, breaks=[]):
 bnames = ['pleasure','wanting_to_move']
 bnames = [bnames[b] for b in block_order] # counterbalance blocks
 for bidx,b in enumerate(bnames):
-    
+    #Flicker task start
+    for i in range(5):
+        pdiode.draw()
+        win.flip()
+        core.wait(0.05)
+        win.flip()
+        core.wait(0.05)
     # present instructions
     blocks[b]['instr'].draw()
     win.flip()
@@ -300,4 +311,10 @@ for bidx,b in enumerate(bnames):
 end_txt.draw()
 win.flip()
 core.wait(2)
-
+#Flicker task end
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
