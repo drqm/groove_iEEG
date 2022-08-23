@@ -14,11 +14,17 @@ In the experiment, we present musical patterns to the participants lasting 10s e
 
 There are two blocks in the experiment. In one of them, on each trial participants hear the musical pattern and then rate how much they wanted to move (1=not at all, 5= very much). In the other block, they hear the same excerpts but instead have to rate how much they liked it. Listeners have up to 7 seconds to provide ratings. Blocks are counterbalanced. Two practice trials are played at the start of each block. There are 48 trials per block. Each level of complexity (medium or high) for either rhythm or harmony has 24 trials per block and 48 in the whole experiment. For the interaction between rhythm and harmony, there are 24 trials per design cell (e.g. harmony-low/rhythm-medium) in the whole experiment and 12 per block. The paradigm takes around 20-25 minutes. There is a break in the middle of each block and a pause between blocks.
 
-The experiment is implemented in psychopy and can be run with the script:
+The experiment is implemented in psychopy and can be run with one of the following scripts, depending on psychopy version and language:
 
 - [scripts/groove_harmony_iEEG.py](https://github.com/drqm/groove_iEEG/blob/master/scripts/groove_harmony_iEEG.py)
 
+- [scripts/groove_harmony_iEEG_3.1.2.py](https://github.com/drqm/groove_iEEG/blob/master/scripts/groove_harmony_iEEG_3.1.2.py)
+
+- [scripts/groove_harmony_iEEG_spanish.py](https://github.com/drqm/groove_iEEG/blob/master/scripts/groove_harmony_iEEG_spanish.py)
+
+- [scripts/groove_harmony_iEEG_norwegian.py](https://github.com/drqm/groove_iEEG/blob/master/scripts/groove_harmony_iEEG_norwegian.py)
+
 The stimuli are found under the "stimuli" directory. A list and metadata for the stimuli used in this experiment are found in "stimuli/stim_list.csv". This list is loaded and randomized in the psychopy script. Names and data for other stimuli not included in this experiment are also found in "stimuli/Stim_Names.xlsx". 
 
-Test logfiles are saved under "logs".
+Test logfiles are saved under "logs". See task instructions for implementation details.
 
